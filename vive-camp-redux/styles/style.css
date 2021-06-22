@@ -1,0 +1,108 @@
+body {
+    background-image: url(../images/every-single-person.png);
+    background-size: cover;
+    background-blend-mode: color-dodge;
+    background-color: #808080;
+}
+
+.tribeList {
+    overflow: hidden;
+    background-color: white;
+    width: fit-content;
+}
+.tribeList a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.tribeList a.red:hover {
+    background-color: red;
+    color: white;
+}
+.tribeList a.orange:hover {
+    background-color: orange;
+    color: white;
+}
+.tribeList a.pink:hover {
+    background-color: rgba(255, 192, 203, 0.863);
+    color: white;
+}
+.tribeList a.yellow:hover {
+    background-color: rgba(223, 223, 1, 0.767);
+    color: white;
+}
+.tribeList a.purple:hover {
+    background-color: purple;
+    color: white;
+}
+.tribeList a.green:hover {
+    background-color: green;
+    color: white;
+}
+.tribeList a.black:hover {
+    background-color: black;
+    color: white;
+}
+.tribeList a.red.active {
+    background-color: red;
+    color: white;
+}
+.tribeList a.orange.active {
+    background-color: orange;
+    color: white;
+}
+.tribeList a.pink.active {
+    background-color:rgba(255, 192, 203, 0.863);
+    color: white;
+}
+.tribeList a.yellow.active {
+    background-color:rgba(223, 223, 1, 0.767);
+    color: white;
+}
+.tribeList a.purple.active {
+    background-color: purple;
+    color: white;
+}
+.tribeList a.green.active {
+    background-color: green;
+    color: white;
+}
+.tribeList a.black.active {
+    background-color: black;
+    color: white;
+}
+.tribeLeader {
+    color: blue;
+}
+
+.hide {
+    display: none;
+}
+
+.topnavButton {
+    font-size: x-large;
+    color: #ddd;
+    display: contents;
+}
+.topnavButton:hover {
+    color: #333;
+}
+.topnavButton.active {
+    color: #333;
+}
+
+#pointAmount {
+    overflow: scroll;
+}
+
+caption {
+    font-size: larger;
+}
+
+details {
+    margin: 0px 75px;
+    color: white;
+}

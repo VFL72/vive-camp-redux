@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <link rel = "stylesheet" href = "../../styles/style.css">
+        <script src = "../../script/main.js"></script>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <meta charset = "UTF-8">
+        <title>Vive Camp</title>
+    </head>
+    <body>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                text-align: center;
+                margin: 0px 75px;
+                font-size: 50px;
+                color: white;
+            }
+        </style>
+        <div>
+            <button class = "topnavButton active" onclick = "window.location.href = 'index.html'"><strong>Points</strong></button>
+            <button class = "topnavButton" onclick = "window.location.href = 'schedule.html'"><strong>Schedule</strong></button>
+            <button class = "topnavButton" onclick = "window.location.href = 'booklet.html'"><strong>Booklet</strong></button>
+            <button class = "topnavButton" onclick = "window.location.href = 'leader-profiles.html'"><strong>Leaders</strong></button>
+        </div>
+
+        <br>
+
+        <table>
+            <caption><strong>Vive Camp Points</strong></caption>
+            <tr>
+                <th>Tribe:</th>
+                <th>Points:</th>
+            </tr>
+            <tr>
+                <td>Red</td>
+                <td><span id = "redPoints">0</span></td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td><span id = "orangePoints">0</span></td>
+            </tr>
+            <tr>
+                <td>Pink</td>
+                <td><span id = "pinkPoints">0</span></td>
+            </tr>
+            <tr>
+                <td>Yellow</td>
+                <td><span id = "yellowPoints">0</span></td>
+            </tr>
+            <tr>
+                <td>Purple</td>
+                <td><span id = "purplePoints">0</span></td>
+            </tr>
+            <tr>
+                <td>Green</td>
+                <td><span id = "greenPoints">0</span></td>
+            </tr>
+            <tr>
+                <td>Black</td>
+                <td><span id = "blackPoints">0</span></td>
+            </tr>
+        </table>
+
+        <br><br>
+
+       <details>
+           <summary>Points Form</summary>
+        <form id = "pointsForm" onsubmit = "return false;">
+            <br>
+            <select name = "dropdown" id = "tribe" required>
+                <option value = "" disabled selected hidden>Choose a tribe</option>
+                <option value = "Red" id = "red">Red</option>
+                <option value = "Orange" id = "orange">Orange</option>
+                <option value = "Pink" id = "pink">Pink</option>
+                <option value = "Yellow" id = "yellow">Yellow</option>
+                <option value = "Purple" id = "purple">Purple</option>
+                <option value = "Green" id = "green">Green</option>
+                <option value = "Black" id = "black">Black</option>
+             </select>
+             <br><br>
+            <input type = "number" id = "pointAmount" placeholder = "Num. of Points" required>
+            <br><br>
+            <input type = "password" id = "passwordInput" placeholder = "Password" required>
+            <br><br>
+            <input type = "submit" onclick = "addPoints()">
+        </form>
+        </details>
+    </body>
+</html>
